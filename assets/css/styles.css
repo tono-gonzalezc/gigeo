@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+
+/* Estilos para Desktop */
+body {
+    background-color: white;
+}
+
+nav {
+    background-color: white;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 900;
+}
+
+
+/*Estilo NAVBAR*/
+
+.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: inline-block;
+}
+
+.art {
+    font-size: x-small;
+    vertical-align: top;
+}
+
+
+
+.iconos {
+    display: flex;
+    float: right;
+    font-size: xx-large;
+    padding: 1rem;
+
+}
+
+i {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+
+/*Estilos para Header*/
+.contenedorheader {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.fotoperfil {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+}
+
+.contenedor-fotonombre {
+    display: grid;
+    grid-template-columns: 10% 20% 50% 10% 10%;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+.contenedor-nombreseguidores {
+    margin-top: 20px;
+
+}
+.nombre {
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 0;
+}
+
+.seguidores {
+    font-weight: 400;
+    color: grey;
+
+}
+
+.contenedor-boton {
+    padding: 10px;
+    margin-top: 15px;
+
+}
+
+.botonmensaje {
+    background-color: #92DCE5;
+    border: none;
+    color: white;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+
+}
+
+.botonseguir {
+    background-color: #EF6461;
+    border: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*Contenido Principal*/
+
+.contenedorPrincipal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 40px;
+}
+
+.tarjeta {
+    box-sizing: content-box;
+}
+
+
+
+.titulo {
+    font-size: 30px; 
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    padding-top: 10px;
+}
+.vistas {
+    font-size: 18px; 
+    text-align: left;
+    color: grey;
+    margin: 0;
+    padding-top: 5px;
+}
+
+
+
+
+/*Estilos para mobile*/
+
+  /*Header para mobile*/
+
+
+@media screen and (max-width: 576px ){
+   
+    .ocultar{
+        display: none;
+    }
+
+    .contenedorPrincipal {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .contenedor-fotonombre {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .fotoperfil {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contenedor-boton {
+        display: none;
+    }
+    
+    .logo {
+        text-align: center;
+    }
+
+}
+/*display: block*/
